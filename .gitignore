@@ -21,6 +21,7 @@ proxy.log
 Scripts/*.mov
 tmp_sdk
 node_modules
+AdNetworkSupport/**/SDK/*.bundle
 AdNetworkSupport/**/SDK/*.h
 AdNetworkSupport/**/SDK/*.a
 AdNetworkSupport/**/SDK/*.framework
