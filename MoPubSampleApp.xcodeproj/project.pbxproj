@@ -3340,7 +3340,6 @@
 					"$(PROJECT_DIR)/AdNetworkSupport/Chartboost/SDK",
 					"$(PROJECT_DIR)/AdNetworkSupport/Facebook/SDK",
 					"$(PROJECT_DIR)/AdNetworkSupport/Millennial/SDK",
-					"$(PROJECT_DIR)/AdNetworkSupport/Kiip/SDK/Kiip-iOS-SDK",
 					"$(PROJECT_DIR)/AdNetworkSupport/Kiip/SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -3374,7 +3373,6 @@
 					"$(PROJECT_DIR)/AdNetworkSupport/Chartboost/SDK",
 					"$(PROJECT_DIR)/AdNetworkSupport/Facebook/SDK",
 					"$(PROJECT_DIR)/AdNetworkSupport/Millennial/SDK",
-					"$(PROJECT_DIR)/AdNetworkSupport/Kiip/SDK/Kiip-iOS-SDK",
 					"$(PROJECT_DIR)/AdNetworkSupport/Kiip/SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
