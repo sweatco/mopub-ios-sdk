@@ -29,18 +29,6 @@ static KPKiipInterstitialCustomEvent *sInstance = nil;
     return sInstance;
 }
 
-//{
-//    appKey = 3b46e5f42299f1697193bb843ed8dbf4;
-//    appSecret = 90c4f68ebb4817b3edf24799b04df22c;
-//    birthday = "03/19/1990";
-//    email = "support@kiip.me";
-//    gender = Male;
-//    momentId = test;
-//    testMode = 1;
-//    userId = 304203;
-//}
-
-
 + (void)setAppKey:(NSString *)appKey andSecret:(NSString *)appSecret
 {
     [Kiip initWithAppKey:appKey andSecret:appSecret];
@@ -49,8 +37,6 @@ static KPKiipInterstitialCustomEvent *sInstance = nil;
 
 - (void)requestInterstitialWithCustomEventInfo:(NSDictionary *)info
 {
-    NSLog(@"Test :: %@", info);
-    
     if ([Kiip sharedInstance] == nil && info != nil) {
         if ([info objectForKey:@"appKey"] && [info objectForKey:@"appSecret"]) {
             [Kiip initWithAppKey:[info objectForKey:@"appKey"] andSecret:[info objectForKey:@"appSecret"]];
