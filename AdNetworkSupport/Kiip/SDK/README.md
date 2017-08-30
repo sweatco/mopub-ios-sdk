@@ -1,0 +1,1 @@
+To use the Kiip, download the Kiip's iOS SDK (docs.kiip.me) and place the framework (KiipSDK.framework) and resource (KiipSDKResources.bundle) files in this folder and follow the integration steps available at http://docs.kiip.me/en/guide/ios.html

@@ -412,6 +412,11 @@
 		57F403921BA09B62002E2601 /* MPStaticNativeAdImpressionTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F403911BA09B62002E2601 /* MPStaticNativeAdImpressionTimer.m */; };
 		57F403931BA09B62002E2601 /* MPStaticNativeAdImpressionTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F403911BA09B62002E2601 /* MPStaticNativeAdImpressionTimer.m */; };
 		57FFAB86199C110D00F655CF /* MPCollectionViewAdPlacerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FFAB85199C110D00F655CF /* MPCollectionViewAdPlacerView.m */; };
+		7022A5501C179C0D001ADEEB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 7022A54F1C179C0D001ADEEB /* README.md */; settings = {ASSET_TAGS = (); }; };
+		7022A5531C17A3E4001ADEEB /* KPKiipInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7022A5521C17A3E4001ADEEB /* KPKiipInterstitialCustomEvent.m */; settings = {ASSET_TAGS = (); }; };
+		7071A61D1C22139D00269551 /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7071A61B1C22139D00269551 /* KiipSDK.framework */; settings = {ASSET_TAGS = (); }; };
+		7071A61E1C22139D00269551 /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7071A61C1C22139D00269551 /* KiipSDKResources.bundle */; settings = {ASSET_TAGS = (); }; };
+		707A1EA31C1A156D00F79CF1 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE902A39171F559F00991DF9 /* PassKit.framework */; };
 		7E17DDDF1AB22E2D00E4D976 /* MPLogEventCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E17DDDE1AB22E2D00E4D976 /* MPLogEventCommunicator.m */; };
 		7ED6F1391AA148E4000B19F1 /* MPLogEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6F1361AA148E4000B19F1 /* MPLogEvent.m */; };
 		7ED6F13A1AA148E4000B19F1 /* MPLogEventRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED6F1381AA148E4000B19F1 /* MPLogEventRecorder.m */; };
@@ -1108,6 +1113,11 @@
 		57F403911BA09B62002E2601 /* MPStaticNativeAdImpressionTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPStaticNativeAdImpressionTimer.m; sourceTree = "<group>"; };
 		57FFAB84199C110D00F655CF /* MPCollectionViewAdPlacerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCollectionViewAdPlacerView.h; sourceTree = "<group>"; };
 		57FFAB85199C110D00F655CF /* MPCollectionViewAdPlacerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCollectionViewAdPlacerView.m; sourceTree = "<group>"; };
+		7022A54F1C179C0D001ADEEB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7022A5511C17A3E4001ADEEB /* KPKiipInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPKiipInterstitialCustomEvent.h; sourceTree = "<group>"; };
+		7022A5521C17A3E4001ADEEB /* KPKiipInterstitialCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPKiipInterstitialCustomEvent.m; sourceTree = "<group>"; };
+		7071A61B1C22139D00269551 /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiipSDK.framework; sourceTree = "<group>"; };
+		7071A61C1C22139D00269551 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KiipSDKResources.bundle; sourceTree = "<group>"; };
 		7E17DDDD1AB22E2D00E4D976 /* MPLogEventCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLogEventCommunicator.h; sourceTree = "<group>"; };
 		7E17DDDE1AB22E2D00E4D976 /* MPLogEventCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLogEventCommunicator.m; sourceTree = "<group>"; };
 		7ED6F1351AA148E4000B19F1 /* MPLogEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLogEvent.h; sourceTree = "<group>"; };
@@ -1391,6 +1401,7 @@
 				AEF1E33317270AA400FC49F8 /* CoreTelephony.framework in Frameworks */,
 				2AC79F441DF7814700195AC5 /* SafariServices.framework in Frameworks */,
 				2A86E7F21D710CE60087594C /* WebKit.framework in Frameworks */,
+				707A1EA31C1A156D00F79CF1 /* PassKit.framework in Frameworks */,
 				B26284151B83CACE00960F74 /* CoreMedia.framework in Frameworks */,
 				2A9985621F391F9800ADD068 /* MPUBMoatMobileAppKit.framework in Frameworks */,
 				BC3B986A1E70C85400C77554 /* CoreGraphics.framework in Frameworks */,
@@ -1404,6 +1415,9 @@
 				AEF1E33317270AA400FC49F8 /* CoreTelephony.framework in Frameworks */,
 				AE0F1FB3171F1D3100FA3BE6 /* Foundation.framework in Frameworks */,
 				AE0F1FB2171F1D2800FA3BE6 /* CoreLocation.framework in Frameworks */,
+				7071A61D1C22139D00269551 /* KiipSDK.framework in Frameworks */,
+				AE0F1FB0171F1D2300FA3BE6 /* QuartzCore.framework in Frameworks */,
+				AE0F1FAF171F1D1900FA3BE6 /* SystemConfiguration.framework in Frameworks */,
 				AE0F1FAE171F1D1000FA3BE6 /* StoreKit.framework in Frameworks */,
 				2A9985601F391F9800ADD068 /* libAvid-mopub-3.6.1.a in Frameworks */,
 				AE0F1FAD171F1D0A00FA3BE6 /* AdSupport.framework in Frameworks */,
@@ -1953,6 +1967,7 @@
 		5755DA591AAA4E2300DC32EA /* AdNetworkSupport */ = {
 			isa = PBXGroup;
 			children = (
+				7022A54C1C179BD9001ADEEB /* Kiip */,
 				5755DA5A1AAA4E2300DC32EA /* AdColony */,
 				5755DA6C1AAA4E2300DC32EA /* Chartboost */,
 				5755DA781AAA4E2300DC32EA /* Facebook */,
@@ -2234,6 +2249,48 @@
 				57D322541BD9946A00ACF21E /* TapjoyResources.bundle */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		57EF00BD1BD96E18002634DE /* VungleSDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				57EF00BE1BD96E18002634DE /* Resources */,
+				57EF00C51BD96E18002634DE /* VungleSDK.framework */,
+			);
+			path = VungleSDK.embeddedframework;
+			sourceTree = "<group>";
+		};
+		57EF00BE1BD96E18002634DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57EF00BF1BD96E18002634DE /* __vungle.db */,
+				57EF00C01BD96E18002634DE /* vg_close.png */,
+				57EF00C11BD96E18002634DE /* vg_cta.png */,
+				57EF00C21BD96E18002634DE /* vg_mute_off.png */,
+				57EF00C31BD96E18002634DE /* vg_mute_on.png */,
+				57EF00C41BD96E18002634DE /* vg_privacy.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7022A54C1C179BD9001ADEEB /* Kiip */ = {
+			isa = PBXGroup;
+			children = (
+				7022A5511C17A3E4001ADEEB /* KPKiipInterstitialCustomEvent.h */,
+				7022A5521C17A3E4001ADEEB /* KPKiipInterstitialCustomEvent.m */,
+				7022A54E1C179C0D001ADEEB /* SDK */,
+			);
+			path = Kiip;
+			sourceTree = "<group>";
+		};
+		7022A54E1C179C0D001ADEEB /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				7071A61B1C22139D00269551 /* KiipSDK.framework */,
+				7071A61C1C22139D00269551 /* KiipSDKResources.bundle */,
+				7022A54F1C179C0D001ADEEB /* README.md */,
+			);
+			path = SDK;
 			sourceTree = "<group>";
 		};
 		7ED6F1341AA148E4000B19F1 /* Event Logging */ = {
@@ -2820,6 +2877,7 @@
 				B257A2ED1BA38F1200F5D320 /* MPUnmutedBtn.png in Resources */,
 				B257A2E91BA38F1200F5D320 /* MPMutedBtn@2x.png in Resources */,
 				B228D33F1B8FB57300123DD0 /* MPCloseBtn@2x.png in Resources */,
+				7071A61E1C22139D00269551 /* KiipSDKResources.bundle in Resources */,
 				4A8DD10618C90636005E9389 /* MPNativeAdTableHeaderView.xib in Resources */,
 				57240AD81A688C05009271B8 /* MRAID.bundle in Resources */,
 			);
@@ -3166,6 +3224,7 @@
 				57240A571A688C05009271B8 /* MPSessionTracker.m in Sources */,
 				57240A6F1A688C05009271B8 /* MPConstants.m in Sources */,
 				57AC6A041BB221130053C556 /* MOPUBActivityIndicatorView.m in Sources */,
+				7022A5501C179C0D001ADEEB /* README.md in Sources */,
 				A714FE751B699B1B000EAEC4 /* MPVASTStringUtilities.m in Sources */,
 				BC314B571EFDCEA1002B1BEB /* MPRewardedVideoNetwork.m in Sources */,
 				B25486BC1EC91F8C0005A596 /* MOPUBExperimentProvider.m in Sources */,
@@ -3270,6 +3329,7 @@
 				57240AC01A688C05009271B8 /* MPStreamAdPlacementData.m in Sources */,
 				57240AB71A688C05009271B8 /* MPNativeAdSource.m in Sources */,
 				7ED6F1391AA148E4000B19F1 /* MPLogEvent.m in Sources */,
+				7022A5531C17A3E4001ADEEB /* KPKiipInterstitialCustomEvent.m in Sources */,
 				57240A121A688C05009271B8 /* MRConstants.m in Sources */,
 				572409A31A688C05009271B8 /* MPBannerCustomEventAdapter.m in Sources */,
 				57240AAE1A688C05009271B8 /* MPNativeAdError.m in Sources */,
@@ -3487,6 +3547,11 @@
 					"$(PROJECT_DIR)/MoPubSDK/Internal/Viewability/MOAT",
 					"$(PROJECT_DIR)/Viewability/MOAT",
 					"$(PROJECT_DIR)/MoPubSDK/Viewability/MOAT",
+					"$(PROJECT_DIR)/AdNetworkSupport/AdColony/SDK",
+					"$(PROJECT_DIR)/AdNetworkSupport/Chartboost/SDK",
+					"$(PROJECT_DIR)/AdNetworkSupport/Facebook/SDK",
+					"$(PROJECT_DIR)/AdNetworkSupport/Millennial/SDK",
+					"$(PROJECT_DIR)/AdNetworkSupport/Kiip/SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MoPubSampleApp/MoPubSampleApp-Prefix.pch";
@@ -3527,6 +3592,11 @@
 					"$(PROJECT_DIR)/MoPubSDK/Internal/Viewability/MOAT",
 					"$(PROJECT_DIR)/Viewability/MOAT",
 					"$(PROJECT_DIR)/MoPubSDK/Viewability/MOAT",
+					"$(PROJECT_DIR)/AdNetworkSupport/AdColony/SDK",
+					"$(PROJECT_DIR)/AdNetworkSupport/Chartboost/SDK",
+					"$(PROJECT_DIR)/AdNetworkSupport/Facebook/SDK",
+					"$(PROJECT_DIR)/AdNetworkSupport/Millennial/SDK",
+					"$(PROJECT_DIR)/AdNetworkSupport/Kiip/SDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MoPubSampleApp/MoPubSampleApp-Prefix.pch";
