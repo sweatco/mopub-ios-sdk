@@ -11,7 +11,6 @@
 
 @interface KPKiipInterstitialCustomEvent () <KiipDelegate, KPPoptartDelegate>
 
-@property (nonatomic, strong) Kiip *sKiipInstance;
 @property (nonatomic, strong) KPPoptart *sPoptart;
 
 @end
@@ -32,24 +31,24 @@ static KPKiipInterstitialCustomEvent *sInstance = nil;
 
 + (void)setAppKey:(NSString *)appKey andSecret:(NSString *)appSecret
 {
-    [KPKiipInterstitialCustomEvent sharedInstance].sKiipInstance = [[Kiip alloc] initWithAppKey:appKey andSecret:appSecret];
+    [Kiip initWithAppKey:appKey andSecret:appSecret];
     [[Kiip sharedInstance] setDelegate:[KPKiipInterstitialCustomEvent sharedInstance]];
 }
 
 - (void)requestInterstitialWithCustomEventInfo:(NSDictionary *)info
 {
-    if (self.sKiipInstance == nil && info != nil) {
+    if ([Kiip sharedInstance] == nil && info != nil) {
         if ([info objectForKey:@"appKey"] && [info objectForKey:@"appSecret"]) {
-            self.sKiipInstance = [[Kiip alloc] initWithAppKey:[info objectForKey:@"appKey"] andSecret:[info objectForKey:@"appSecret"]];
-            [self.sKiipInstance setDelegate:self];
+            [Kiip initWithAppKey:[info objectForKey:@"appKey"] andSecret:[info objectForKey:@"appSecret"]];
+            [[Kiip sharedInstance] setDelegate:self];
         }
     }
-    if (self.sKiipInstance && info != nil) {
+    if ([Kiip sharedInstance] && info != nil) {
         if ([info objectForKey:@"testMode"]) {
-            [self.sKiipInstance setTestMode:[info objectForKey:@"testMode"]];
+            [[Kiip sharedInstance] setTestMode:[info objectForKey:@"testMode"]];
         }
         if ([info objectForKey:@"momentId"]) {
-            [self.sKiipInstance saveMoment:[info objectForKey:@"momentId"] withCompletionHandler:^(KPPoptart *poptart, NSError *error) {
+            [[Kiip sharedInstance] saveMoment:[info objectForKey:@"momentId"] withCompletionHandler:^(KPPoptart *poptart, NSError *error) {
                 if (error) {
                     [self.delegate interstitialCustomEvent:self didFailToLoadAdWithError:error];
                 } else if (poptart != nil) {
