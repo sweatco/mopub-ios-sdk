@@ -65,7 +65,6 @@
 - (void)presentRewardedVideoFromViewController:(UIViewController *)viewController {
     if (self.poptart != nil) {
         [self.poptart show];
-        self.poptart = nil;
     }
 }
 
@@ -79,6 +78,18 @@
 -(void)didDismissPoptart:(KPPoptart *)poptart {
     [self.delegate rewardedVideoWillDisappearForCustomEvent:self];
     [self.delegate rewardedVideoDidDisappearForCustomEvent:self];
+}
+
+#pragma mark - KiipDelegate methods
+
+- (void) kiip:(Kiip *)kiip
+didReceiveContent:(NSString *)content
+     quantity:(int)quantity
+transactionId:(NSString *)transactionId
+    signature:(NSString *)signature {
+    self.poptart = nil;
+    [self.delegate rewardedVideoShouldRewardUserForCustomEvent:self
+                                                        reward:[[MPRewardedVideoReward alloc] initWithCurrencyAmount:@(kMPRewardedVideoRewardCurrencyAmountUnspecified)]];
 }
 
 @end
