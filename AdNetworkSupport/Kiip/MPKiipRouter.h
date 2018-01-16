@@ -6,11 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <KiipSDK/KiipSDK.h>
 
 @protocol MPKiipRouterDelegate;
+@class KPPoptart;
 
-@interface MPKiipRouter : NSObject <KiipDelegate, KPPoptartDelegate>
+@interface MPKiipRouter : NSObject
 
 +(instancetype) sharedInstance;
 

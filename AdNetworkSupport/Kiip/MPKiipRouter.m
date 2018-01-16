@@ -7,7 +7,9 @@
 
 #import "MPKiipRouter.h"
 
-@interface MPKiipRouter ()
+#import <KiipSDK/KiipSDK.h>
+
+@interface MPKiipRouter () <KiipDelegate, KPPoptartDelegate>
 
 @property (nonatomic, weak) id<MPKiipRouterDelegate> delegate;
 
